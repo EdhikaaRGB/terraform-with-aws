@@ -33,9 +33,9 @@ Input Variables.
 
 There are 10 different ways by which we can pass the Input Variables
 
-1) With Input Variables
+1) With Input Variables Basic
 2) when we run terraform plan or terraform apply we can pass the input variables
-3) from the command line we can pass the input variables via -var CLI argument
+3) from the command line we can pass the input variables via -var CLI argument / override default input with CLI var
 4) By defining the environment variable like TF_var_name (name is the input variable)
 5) Using terraform.tfvars files
 6) from the CLI we can pass by -var-file we can pass the input variable
@@ -43,6 +43,9 @@ There are 10 different ways by which we can pass the Input Variables
 8) We can pass List or MAP in input variables
 9) We can pass custom Validation Rules in variables
 10) Protect sensetive data from the Input Variables
+
+
+1) With Input Variables Basic
 
 A) Now lets create the provider.tf 
 Here we have mentioned the terraform version and the provider version
