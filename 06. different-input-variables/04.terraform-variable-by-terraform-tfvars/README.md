@@ -1,6 +1,8 @@
 terraform.tfvars
 
-Terraform will auto load the variables present in this file by overriding the default values in variable.tf file
+Terraform will auto load the variables present in terraform.tfvars file by overriding the default values in variable.tf file
+
+We do not have to pass the terraform.tfvars file name when we are running terraform plan or terraform apply commands
 
 This is our variable.tf file
 
