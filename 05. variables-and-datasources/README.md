@@ -44,6 +44,18 @@ There are 10 different ways by which we can pass the Input Variables
 9) We can pass custom Validation Rules in variables
 10) Protect sensetive data from the Input Variables
 
+Input Variable Precedence
+
+If the same variable is assigned multiple values, Terraform uses the last value it finds, overriding the previous values. 
+
+Terraform loads variablesin the following order, the later sources will take precedence over the earlier ones.
+
+- Environment Variable
+- terraform.tfvars
+- terraform.tfvars.json
+- *.auto.tfvars
+- -var -var-file (Passed from the CLI)
+
 
 1) With Input Variables Basic
 
